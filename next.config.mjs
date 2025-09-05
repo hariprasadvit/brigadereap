@@ -8,7 +8,7 @@ const nextConfig = {
     styledComponents: true,
   },
   experimental: {
-    turbo: false,
+    turbo: {},
   },
   images: {
     remotePatterns: [
