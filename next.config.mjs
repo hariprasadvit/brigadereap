@@ -31,6 +31,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "brigadereap.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.builder.io",
+      },
     ],
   },
 };
