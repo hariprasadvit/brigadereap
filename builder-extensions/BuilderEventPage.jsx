@@ -98,7 +98,7 @@ export default function BuilderEventPage() {
         <div className="hero-content">
           <div className="hero-inner">
             <div className="hero-image">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F1ba648a6a1694e9aa91b762fb1bf4499%2F2e8b1d46a8d44148bb8067dd47188402?format=webp&width=1200" alt="Propagate 2024" />
+              <img src="https://s3.ap-south-1.amazonaws.com/purva-media/about-us-2.jpg" alt="Propagate 2024" />
             </div>
             <div className="hero-text">
               <h1 className="builder-event-title">Where the future of UrbanTech takes center stage</h1>
