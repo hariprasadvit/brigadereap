@@ -512,6 +512,8 @@ const CompanyProfileWrap = styled.div`
   font-size: ${({ theme }) => theme.fontSizes.base};
   line-height: 23px;
   color: ${({ theme }) => theme.colors.font.body};
+  height: 100%;
+  align-self: stretch;
 
   @media (max-width: 1100px) {
     gap: 1rem;
