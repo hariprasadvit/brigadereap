@@ -28,7 +28,7 @@ const AntdInput = ({
           className="custom-input custom-textarea"
           placeholder={`Enter ${label?.replaceAll("*", "")}`}
           rows={4}
-          value={value} // Ensure it's controlled
+          value={value ?? ""} // Ensure it's controlled
           onChange={onChange} // Ensure form updates its value
         />
       ) : isPassword ? (
@@ -36,7 +36,7 @@ const AntdInput = ({
           type={type}
           className={className || "custom-input"}
           placeholder={`Enter ${label}`}
-          value={value} // Ensure it's controlled
+          value={value ?? ""} // Ensure it's controlled
           onChange={onChange} // Ensure form updates its value
         />
       ) : (
@@ -46,7 +46,7 @@ const AntdInput = ({
           placeholder={`Enter ${
             label ? label?.replaceAll("*", "") : placeholder
           }`}
-          value={value} // Ensure it's controlled
+          value={value ?? ""} // Ensure it's controlled
           onChange={onChange} // Ensure form updates its value
           disabled={disabled}
           onKeyPress={onKeyPress}
