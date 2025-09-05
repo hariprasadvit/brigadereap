@@ -23,7 +23,7 @@ const montserrat = Montserrat({
 });
 
 export default async function RootLayout({ children }) {
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const token = cookieStore.get("access_token")?.value;
   const user = token ? await fetchUser(token) : {}; // ⬅️ now coming from helper
 
