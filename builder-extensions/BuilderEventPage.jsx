@@ -94,12 +94,14 @@ const sampleEvents = [
 export default function BuilderEventPage() {
   return (
     <main className="builder-event-page">
-      <header className="builder-event-header" role="banner">
-        <h1 className="builder-event-title">Where UrbanTech Comes Together</h1>
-        <p className="builder-event-subtitle">
-          We bring together founders, investors, and industry leaders to shape the
-          future of cities—one conversation at a time.
-        </p>
+      <header className="builder-event-header builder-event-hero" role="banner">
+        <div className="hero-content">
+          <h1 className="builder-event-title">Where UrbanTech Comes Together</h1>
+          <p className="builder-event-subtitle">
+            We bring together founders, investors, and industry leaders to shape the
+            future of cities—one conversation at a time.
+          </p>
+        </div>
       </header>
 
       <section className="builder-event-grid" aria-label="Upcoming events">
