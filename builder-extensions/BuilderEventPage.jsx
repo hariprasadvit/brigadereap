@@ -96,11 +96,17 @@ export default function BuilderEventPage() {
     <main className="builder-event-page">
       <header className="builder-event-header builder-event-hero" role="banner">
         <div className="hero-content">
-          <h1 className="builder-event-title">Where UrbanTech Comes Together</h1>
-          <p className="builder-event-subtitle">
-            We bring together founders, investors, and industry leaders to shape the
-            future of cities—one conversation at a time.
-          </p>
+          <div className="hero-inner">
+            <div className="hero-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F1ba648a6a1694e9aa91b762fb1bf4499%2F2e8b1d46a8d44148bb8067dd47188402?format=webp&width=1200" alt="Propagate 2024" />
+            </div>
+            <div className="hero-text">
+              <h1 className="builder-event-title">Where the future of UrbanTech takes center stage</h1>
+              <p className="builder-event-subtitle">
+                Propagate brings together founders, investors, and ecosystem leaders to explore what it takes to build the next generation of PropTech unicorns.
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
