@@ -6,6 +6,8 @@ import { getStartups } from "@/lib/api/startups";
 import { fetchUser } from "@/lib/api/user";
 import { getIndustries } from "@/lib/api/industries";
 import { getBanners } from "@/lib/api/banners";
+import dynamic from "next/dynamic";
+const BuilderEventPage = dynamic(() => import('../../builder-extensions/BuilderEventPage'), { ssr: false });
 
 const pageSize = 10;
 const allowedQueryKeys = [
