@@ -406,11 +406,13 @@ const CompanyDetails = styled.div`
   flex-direction: column;
   gap: 12.5px;
   width: 100%;
+  height: 100%;
 
   @media (max-width: 600px) {
     gap: 5px;
   }
 `;
+
 
 const CompanyText = styled.div`
   display: flex;
