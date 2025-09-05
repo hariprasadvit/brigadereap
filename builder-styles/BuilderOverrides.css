@@ -1,0 +1,12 @@
+/* Builder style overrides namespace.
+   Place all project-specific CSS overrides or utility classes here.
+   Prefix classes with .builder- to avoid collisions with existing styles.
+*/
+
+.builder-hidden {
+  display: none !important;
+}
+
+.builder-text-muted {
+  color: rgba(0,0,0,0.6);
+}

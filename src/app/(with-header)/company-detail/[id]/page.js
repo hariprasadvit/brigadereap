@@ -5,7 +5,7 @@ import { cookies } from "next/headers";
 
 export default async function CompanyDetail({ params }) {
   const { id } = params;
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const token = cookieStore.get("access_token")?.value;
 
   const [startupDetail, user] = await Promise.all([

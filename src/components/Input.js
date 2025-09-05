@@ -22,7 +22,7 @@ export default function InputComponent({
         <StyledTextarea
           name={name}
           id={name}
-          value={value}
+          value={value ?? ""}
           onChange={onChange}
           placeholder={placeholder}
           disabled={disabled}
@@ -33,7 +33,7 @@ export default function InputComponent({
           type={type || "text"}
           name={name}
           id={name}
-          value={value}
+          value={value ?? ""}
           onChange={onChange}
           placeholder={placeholder}
           disabled={disabled}

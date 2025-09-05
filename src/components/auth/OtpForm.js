@@ -35,7 +35,7 @@ export default function OtpForm({
       <Form>
         <OtpWrap>
           <OtpInput
-            value={otp}
+            value={otp ?? ""}
             onChange={onChange}
             numInputs={6}
             inputType="tel"

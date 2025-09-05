@@ -19,14 +19,15 @@ const allowedQueryKeys = [
 ];
 
 export default async function Landing({ searchParams }) {
+  const params = await searchParams;
   const queryObject = Object.fromEntries(
-    Object.entries(searchParams).filter(
+    Object.entries(params).filter(
       ([key, value]) =>
         allowedQueryKeys.includes(key) && typeof value === "string"
     )
   );
   const queryItemsPerPage = Object.fromEntries(
-    Object.entries(searchParams).filter(
+    Object.entries(params).filter(
       ([key, value]) => key === "items_per_page" && typeof value === "string"
     )
   );
@@ -39,7 +40,7 @@ export default async function Landing({ searchParams }) {
     delete queryObject.is_reap_company;
   }
 
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const token = cookieStore.get("access_token")?.value;
 
   // Run all API calls in parallel

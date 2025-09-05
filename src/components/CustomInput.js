@@ -31,11 +31,8 @@ export default function CustomInput({
   value,
   defaultValue,
 }) {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState(defaultValue ?? "");
 
-  useEffect(() => {
-    setInputValue(defaultValue);
-  }, [defaultValue]);
   return (
     <InputWrapper
       $gap={gap}
@@ -61,7 +58,6 @@ export default function CustomInput({
         }}
         onKeyDown={handleKeyDown}
         value={inputValue}
-        defaultValue={defaultValue}
         onFocus={onFocus}
       />
       {buttonText && (

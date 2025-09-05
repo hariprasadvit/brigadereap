@@ -4,7 +4,7 @@ import { fetchUser } from "@/lib/api/user";
 import { cookies } from "next/headers";
 
 export default async function Profile() {
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const token = cookieStore.get("access_token")?.value;
 
   const [startups, user] = token
