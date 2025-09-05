@@ -6,6 +6,21 @@ import "../builder-styles/BuilderEvent.css";
 
 const sampleEvents = [
   {
+    id: 99,
+    title: "Propagate 2024",
+    subtitle: "Powered by Kotak",
+    excerpt:
+      "Propagate is our flagship event showcasing innovation and industry collaboration.",
+    images: [
+      {
+        src: "https://cdn.builder.io/api/v1/image/assets%2F1ba648a6a1694e9aa91b762fb1bf4499%2F831fb932017a4b4fa68144b922e13316?format=webp&width=800",
+        alt: "Propagate 2024 hero",
+      },
+    ],
+    website: "https://brigadereap.com/propagate",
+    tickets: "https://brigadereap.com/propagate/tickets",
+  },
+  {
     id: 1,
     title: "UrbanTech Summit 2025",
     subtitle: "Rethinking infrastructure for smarter cities",
