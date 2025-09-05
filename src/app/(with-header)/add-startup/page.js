@@ -5,8 +5,9 @@ import { fetchUser } from "@/lib/api/user";
 import { cookies } from "next/headers";
 
 export default async function AddStartUp({ searchParams }) {
-  const { id } = searchParams;
-  const cookieStore = cookies();
+  const params = await searchParams;
+  const { id } = params;
+  const cookieStore = await cookies();
   const token = cookieStore.get("access_token")?.value;
 
   const [startupDetail, industries, user] = await Promise.all([
