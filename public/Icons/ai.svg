@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="Group_199" data-name="Group 199" transform="translate(-799 -426)">
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="18.5" cy="18.5" r="18.5" transform="translate(799 426)" fill="#e47b3c"/>
+    <g id="chip" transform="translate(805.6 432.6)">
+      <g id="Group_197" data-name="Group 197" transform="translate(2.4 2.4)">
+        <path id="Path_192" data-name="Path 192" d="M23.467,16.8H16.8v6.667h6.667Z" transform="translate(-10.133 -10.133)" fill="#fff"/>
+        <path id="Path_193" data-name="Path 193" d="M9.067,3.511a1.111,1.111,0,1,1,2.222,0V4.622h2.222V3.511a1.111,1.111,0,1,1,2.222,0V4.622h2.222a2.222,2.222,0,0,1,2.222,2.222V9.067h1.111a1.111,1.111,0,1,1,0,2.222H20.178v2.222h1.111a1.111,1.111,0,1,1,0,2.222H20.178v2.222a2.222,2.222,0,0,1-2.222,2.222H15.733v1.111a1.111,1.111,0,1,1-2.222,0V20.178H11.289v1.111a1.111,1.111,0,1,1-2.222,0V20.178H6.844a2.222,2.222,0,0,1-2.222-2.222V15.733H3.511a1.111,1.111,0,1,1,0-2.222H4.622V11.289H3.511a1.111,1.111,0,1,1,0-2.222H4.622V6.844A2.222,2.222,0,0,1,6.844,4.622H9.067ZM6.844,6.844H17.956V17.956H6.844Z" transform="translate(-2.4 -2.4)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

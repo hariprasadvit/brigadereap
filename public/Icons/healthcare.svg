@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <g id="Group_198" data-name="Group 198" transform="translate(-269 -412)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="18.5" cy="18.5" r="18.5" transform="translate(269 412)" fill="#e47b3c"/>
+    <g id="heart-cardiogram" transform="translate(271 416)">
+      <g id="Group_196" data-name="Group 196" transform="translate(6 8)">
+        <path id="Path_191" data-name="Path 191" d="M7.688,14.207C7.688,10.986,9.832,8,12.767,8c2.037,0,3.549,1.34,4.483,3.241C18.183,9.34,19.7,8,21.733,8c2.936,0,5.08,2.987,5.08,6.207C26.813,21.1,17.25,26,17.25,26S10.809,22.9,8.5,17.812h5.7l.907-1.612,1.059,3.707,2.481-3.189h3.1V15.594H18.1l-1.457,1.873L15.452,13.3l-1.906,3.388H8.07A9.577,9.577,0,0,0,8.5,17.812H6V16.687H8.07a8.335,8.335,0,0,1-.382-2.481Z" transform="translate(-6 -8)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
