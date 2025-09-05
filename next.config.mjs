@@ -7,6 +7,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  distDir: 'build',
   experimental: {
     turbo: {},
   },
