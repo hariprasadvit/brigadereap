@@ -6,6 +6,21 @@ import "../builder-styles/BuilderEvent.css";
 
 const sampleEvents = [
   {
+    id: 99,
+    title: "Propagate 2024",
+    subtitle: "Powered by Kotak",
+    excerpt:
+      "Propagate is our flagship event showcasing innovation and industry collaboration.",
+    images: [
+      {
+        src: "https://cdn.builder.io/api/v1/image/assets%2F1ba648a6a1694e9aa91b762fb1bf4499%2F831fb932017a4b4fa68144b922e13316?format=webp&width=800",
+        alt: "Propagate 2024 hero",
+      },
+    ],
+    website: "https://brigadereap.com/propagate",
+    tickets: "https://brigadereap.com/propagate/tickets",
+  },
+  {
     id: 1,
     title: "UrbanTech Summit 2025",
     subtitle: "Rethinking infrastructure for smarter cities",
@@ -79,12 +94,20 @@ const sampleEvents = [
 export default function BuilderEventPage() {
   return (
     <main className="builder-event-page">
-      <header className="builder-event-header" role="banner">
-        <h1 className="builder-event-title">Where UrbanTech Comes Together</h1>
-        <p className="builder-event-subtitle">
-          We bring together founders, investors, and industry leaders to shape the
-          future of cities—one conversation at a time.
-        </p>
+      <header className="builder-event-header builder-event-hero" role="banner">
+        <div className="hero-content">
+          <div className="hero-inner">
+            <div className="hero-image">
+              <img src="https://s3.ap-south-1.amazonaws.com/purva-media/about-us-2.jpg" alt="Propagate 2024" />
+            </div>
+            <div className="hero-text">
+              <h1 className="builder-event-title">Where the future of UrbanTech takes center stage</h1>
+              <p className="builder-event-subtitle">
+                Propagate brings together founders, investors, and ecosystem leaders to explore what it takes to build the next generation of PropTech unicorns.
+              </p>
+            </div>
+          </div>
+        </div>
       </header>
 
       <section className="builder-event-grid" aria-label="Upcoming events">

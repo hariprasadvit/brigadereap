@@ -313,17 +313,19 @@ export default CompanyProfileCard;
 
 const CompanyProfileCardWrapper = styled.div`
   display: flex;
+  align-items: stretch;
   border-bottom: 1px dashed ${({ theme }) => theme.colors.border.secondary};
   // position: relative;
 
   @media (max-width: 1023px) {
     flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
 const CompanyNameWrap = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 22px;
   max-width: 642.88px;
   width: 100%;
@@ -350,7 +352,8 @@ const LogoWrapper = styled.div`
   display: flex;
   min-width: 115px;
   max-width: 115px;
-  height: 115px;
+  min-height: 115px;
+  align-self: stretch;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid ${({ theme }) => theme.colors.border.primary};
@@ -358,28 +361,26 @@ const LogoWrapper = styled.div`
   @media (max-width: 1023px) {
     min-width: 100px;
     max-width: 100px;
-    height: 100px;
+    min-height: 100px;
   }
   @media (max-width: 600px) {
     min-width: 90px;
     max-width: 90px;
-    height: 90px;
+    min-height: 90px;
   }
 `;
 
 const StyledImage = styled(Image)`
-  width: 115px;
-  height: 115px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   padding: 5px;
 
   @media (max-width: 1023px) {
-    width: 100px;
-    height: 100px;
+    /* keep responsive sizing handled by LogoWrapper */
   }
   @media (max-width: 600px) {
-    width: 90px;
-    height: 90px;
+    /* keep responsive sizing handled by LogoWrapper */
   }
 `;
 const EditWrapper = styled.div`
@@ -405,11 +406,13 @@ const CompanyDetails = styled.div`
   flex-direction: column;
   gap: 12.5px;
   width: 100%;
+  height: 100%;
 
   @media (max-width: 600px) {
     gap: 5px;
   }
 `;
+
 
 const CompanyText = styled.div`
   display: flex;
@@ -509,6 +512,8 @@ const CompanyProfileWrap = styled.div`
   font-size: ${({ theme }) => theme.fontSizes.base};
   line-height: 23px;
   color: ${({ theme }) => theme.colors.font.body};
+  height: 100%;
+  align-self: stretch;
 
   @media (max-width: 1100px) {
     gap: 1rem;

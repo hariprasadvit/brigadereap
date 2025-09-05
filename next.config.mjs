@@ -7,8 +7,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  distDir: 'build',
   experimental: {
-    turbo: false,
+    turbo: {},
   },
   images: {
     remotePatterns: [
@@ -23,6 +24,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "brigadereap.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.builder.io",
       },
     ],
   },

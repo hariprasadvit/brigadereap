@@ -228,22 +228,25 @@ const EditWrapper = styled.div`
 `;
 const CompanyInfo = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
 `;
 
 const Logo = styled.img`
   width: 3.75rem;
-  height: 3.75rem;
+  min-height: 3.75rem;
+  height: 100%;
   padding: 5px;
   object-fit: contain;
   margin-right: 12px;
   border: 1px solid #c9c9c9;
   border-radius: 8px;
+  align-self: stretch;
 `;
 
 const NamePlace = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
 const CompanyName = styled.div`
