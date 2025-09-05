@@ -275,12 +275,16 @@ export default function StartupListing({
         {banners?.length ? (
           banners?.length === 1 ? (
             <ImageWrap>
-              <img src={banners?.[0]?.image_url} alt="banenr" />
+              <img src={banners?.[0]?.image_url} alt="banner" />
             </ImageWrap>
           ) : (
             <ImageSlider images={banners || []} />
           )
-        ) : null}
+        ) : (
+          <ImageWrap>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F1ba648a6a1694e9aa91b762fb1bf4499%2Fffb55248785e40b6bada8f1d31a25e8d?format=webp&width=800" alt="Propagate 2024" />
+          </ImageWrap>
+        )}
         {/* ))} */}
         <SearchBanner
           // totalCompanies={totalCompanies ? `${totalCompanies} Companies` : ""}
